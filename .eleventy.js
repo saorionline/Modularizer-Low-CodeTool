@@ -1,4 +1,7 @@
 module.exports = function(eleventyConfig) {
+// This takes files from src/css/modules and puts them in _site/css/
+  eleventyConfig.addPassthroughCopy({ "src/css/modules": "css" });
+
   return {
     dir: {
       input: "src",

@@ -1,0 +1,138 @@
+/* ═══════════════════════════════════════════════════════════════
+   LAYOUT.CSS - Structural Layer
+   Main containers, header, footer, responsive breakpoints
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── MAIN CONTENT CONTAINER ── */
+.main {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 100px 40px;
+}
+
+/* ── DIVIDER ── */
+.divider {
+  width: 60px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  margin: 0 auto;
+}
+
+/* ── SECTION SPACING ── */
+.section {
+  margin-bottom: 100px;
+}
+
+/* ── DUAL COLUMN LAYOUT ── */
+.dual-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin: 40px 0;
+}
+
+/* ── GRID LAYOUTS ── */
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  margin: 48px 0;
+}
+
+.selection-matrix-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin: 48px 0;
+}
+
+.financial-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin: 40px 0;
+}
+
+.step-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* ── FOOTER BAR ── */
+.footer-bar {
+  border-top: 1px solid rgba(61, 61, 61, 0.3);
+  padding: 32px 40px;
+  text-align: center;
+}
+
+.footer-bar p {
+  font-size: 11px;
+  color: var(--stone);
+  letter-spacing: 1px;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   RESPONSIVE BREAKPOINTS
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── TABLET & MOBILE (≤768px) ── */
+@media (max-width: 768px) {
+  .main {
+    padding: 60px 24px;
+  }
+
+  .section {
+    margin-bottom: 60px;
+  }
+
+  /* Dual columns to single column */
+  .dual-col {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 32px 0;
+  }
+
+  /* Selection matrix cards */
+  .selection-matrix-cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 32px 0;
+  }
+
+  /* Financial breakdown */
+  .financial-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin: 32px 0;
+  }
+
+  /* Step grid */
+  .step-grid {
+    gap: 40px;
+  }
+
+  /* KPI grid */
+  .kpi-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 32px 0;
+  }
+
+  /* Footer */
+  .footer-bar {
+    padding: 28px 24px;
+  }
+
+  .footer-bar p {
+    font-size: 10px;
+    line-height: 1.6;
+  }
+}
+
+/* ── EXTRA SMALL DEVICES (≤480px) ── */
+@media (max-width: 480px) {
+  .main {
+    padding: 50px 20px;
+  }
+}
