@@ -1,17 +1,23 @@
 {
+  "engines": {
+  "node": "18"
+  },
   "name": "modularizer-low-codetool",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Real State Air B&B Business Developer",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "eleventy",
+    "start": "eleventy --serve",
+    "dev": "eleventy --serve"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/saorionline/Modularizer-Low-CodeTool.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["CEO Partner", "AI OpsDev", "Real State Strategy", "Social Strategy", "Consultoría Inmobiliaria" ],
+  "author": "Saori",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
