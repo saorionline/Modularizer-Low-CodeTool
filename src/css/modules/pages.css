@@ -222,7 +222,7 @@
     padding: 20px 30px;
     border-radius: 8px;
     z-index: 101; /* Higher than navigation's z-index: 100 */
-
+    display: none;
   }
 
   .logo-mark {
@@ -313,5 +313,24 @@
 
   .cover-title {
     font-size: 28px;
+  }
+}
+
+@media (max-width: 239px) {
+  .cover {
+    padding: 100px 15px 40px;
+  }
+
+  .cover-logo {
+    top: 20px;
+    padding: 12px 18px;
+    border-radius: 6px;
+  }
+  .cover-two {
+    padding: 100px 15px 40px;
+  }
+
+  .cover-title {
+    font-size: 22px;
   }
 }

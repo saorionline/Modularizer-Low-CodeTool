@@ -297,3 +297,65 @@
     letter-spacing: 2.5px;
   }
 }
+
+
+/* ═══════════════════════════════════════════════════════════════
+   EXTRA SMALL SCREEN ADJUSTMENTS (239px and below)
+   ═══════════════════════════════════════════════════════════════ */
+@media (max-width: 239px) {
+  .about-section {
+    padding: 30px 15px 50px;
+  }
+
+  .about-content {
+    max-width: 100%;
+  }
+
+  .section-eyebrow {
+    font-size: 7px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+  }
+
+  .about-headline {
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+
+  .about-body {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .about-features {
+    max-width: 100%;
+    padding: 20px 0;
+  }
+
+  .features-title {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+
+  .feature-marker {
+    margin-right: 10px;
+  }
+
+  .feature-content {
+    font-size: 0.85rem;
+  }
+
+  .about-box {
+    padding: 20px 15px;
+    margin: 24px 0;
+  }
+
+  .about-prose {
+    font-size: 13px;
+  }
+
+  .about-label {
+    font-size: 7px;
+    letter-spacing: 2px;
+  }
+}
