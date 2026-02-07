@@ -6,7 +6,8 @@ module.exports = function(eleventyConfig) {
     dir: {
       input: "src",
       output: "_site",
-      includes: "_includes" // This tells 11ty specifically where to find snippets
+      includes: "_includes", // This tells 11ty specifically where to find snippets
+      data: "_data"        // ← This should find src/_data
     }
   };
 };

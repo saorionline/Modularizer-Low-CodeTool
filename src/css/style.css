@@ -2,7 +2,9 @@
 /* 1. Global Styles (Resets, Fonts, Variables) */
 @import "modules/base.css";
 @import "modules/layout.css";
+@import "modules/main-navigation.css";
 @import "modules/components.css";
+@import "modules/about-section.css";
 /* 2. Page/Component Styles (Cover)*/
 @import "modules/pages.css";
 /* @import "modules/lead-form.css"; */

@@ -1,0 +1,237 @@
+/* ========================================
+   ABOUT SECTION
+   ======================================== */
+
+.about-section {
+  position: relative;
+  min-height: 101vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 60px 40px 80px;
+  background: linear-gradient(
+      180deg,
+      rgba(14, 14, 14, 0) 0%,
+      rgba(14, 14, 14, 0.6) 50%,
+      rgba(14, 14, 14, 1) 100%
+    ),
+    linear-gradient(135deg, #1a1612 0%, #0e0e0e 40%, #121210 70%, #0e0e0e 100%);
+  overflow: hidden;
+  text-align: center;
+}
+
+.about-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(201, 169, 110, 0.3) 50%,
+    transparent 100%
+  );
+}
+
+.about-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Section Eyebrow */
+.section-eyebrow {
+  /* font-family: 'Inter', sans-serif;; */
+  font-size: 10px;
+  letter-spacing: 5px;
+  color: #c9a96e;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  font-weight: 500;
+}
+
+/* About Intro */
+.about-intro {
+  color: var(--silver);
+  font-weight: 200;
+  margin-bottom: 60px;
+}
+
+.about-headline {
+  font-family: 'Playfair Display', serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--cream);
+  margin-bottom: 30px;
+}
+
+.about-headline em {
+  color: #c9a96e;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.about-body {
+  font-size: 15px;
+  line-height: 1.8;
+  max-width: 560px;
+  margin: 0 auto 48px;
+}
+
+
+
+.about-body strong {
+  color: #c9a96e;
+  font-weight: 600;
+}
+
+/* Features Section */
+.about-features {
+  max-width: 860px;
+  margin-bottom: 60px;
+  padding: 40px 0;
+  border-top: 1px solid rgba(201, 169, 110, 0.2);
+  border-bottom: 1px solid rgba(201, 169, 110, 0.2);
+}
+
+.features-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 34px;
+  font-weight: 600;
+  color: var(--warm-white);
+  margin-bottom: 30px;
+  letter-spacing: 0;
+  line-height: 1.25;
+}
+
+.feature-accent {
+ color: var(--gold-light);
+}
+
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 24px;
+  padding-left: 0;
+}
+
+.feature-item:last-child {
+  margin-bottom: 0;
+}
+
+.feature-marker {
+  color: #c9a96e;
+  font-size: 0.625rem;
+  margin-right: 16px;
+  margin-top: 8px;
+  flex-shrink: 0;
+}
+
+.feature-content {
+  font-family: 'Lora', serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.feature-content strong {
+  color: #c9a96e;
+  font-weight: 600;
+}
+
+/* About Clients */
+.about-clients {
+  margin-top: 40px;
+}
+
+.about-clients p {
+  font-family: 'Lora', serif;
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0;
+}
+
+.about-clients strong {
+  color: #c9a96e;
+  font-weight: 600;
+}
+
+.about-box{
+  background: linear-gradient(135deg, rgba(26, 22, 18, 0.9), rgba(14, 14, 14, 0.95));
+  border: 1px solid rgba(201, 169, 110, 0.15);
+  border-radius: 4px;
+  padding: 36px 40px;
+  margin: 48px 0;
+}
+.about-box-header{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+.about-prose{
+  font-size: 15px;
+  color: var(--silver);
+  font-weight: 300;
+  line-height: 1.9;
+  margin-top: 15px;
+  margin-bottom: 24px;
+  display: block; /* Makes them stack naturally */
+}
+
+.about-label{
+  font-size: 9px;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 600;
+  display: block; /* Makes them stack naturally */
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 80px 0;
+  }
+
+  .about-headline {
+    font-size: 2rem;
+  }
+
+  .about-body,
+  .about-clients p {
+    font-size: 1rem;
+  }
+
+  .feature-content {
+    font-size: 0.9375rem;
+  }
+
+  .about-features {
+    padding: 30px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-headline {
+    font-size: 1.75rem;
+  }
+
+  .section-eyebrow {
+    font-size: 0.6875rem;
+  }
+
+  .feature-marker {
+    margin-right: 12px;
+  }
+}

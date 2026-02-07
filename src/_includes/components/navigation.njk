@@ -1,0 +1,21 @@
+  <nav class="main-navigation">
+  <div class="nav-container">
+    <ul class="nav-menu">
+      {% for item in navigation %}
+        <li class="nav-item">
+          <a href="{{ item.url }}" class="nav-link">{{ item.name }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+  </nav>
+  <div class="cover-logo">
+    <!-- Geometric stone/diamond logo mark -->
+    <svg class="logo-mark" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="24,4 44,18 44,34 24,48 4,34 4,18" stroke="#c9a96e" stroke-width="1" fill="none"/>
+      <polygon points="24,12 36,20 36,32 24,40 12,32 12,20" stroke="#c9a96e" stroke-width="0.6" fill="rgba(201,169,110,0.06)"/>
+      <circle cx="24" cy="26" r="3" fill="#c9a96e" opacity="0.7"/>
+    </svg>
+    <div class="logo-text">Hot Stone Blueprint</div>
+  </div>
+
