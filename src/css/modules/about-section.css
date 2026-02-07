@@ -198,40 +198,102 @@
   font-weight: 600;
   display: block; /* Makes them stack naturally */
 }
-/* Responsive Design */
+/* ═══════════════════════════════════════════════════════════════
+   RESPONSIVE COMPONENT ADJUSTMENTS
+   ═══════════════════════════════════════════════════════════════ */
 @media (max-width: 768px) {
   .about-section {
-    padding: 80px 0;
+    min-height: 100vh;
+    padding: 40px 20px 60px;
+  }
+
+  .about-content {
+    max-width: 100%;
+  }
+
+  /* Section Eyebrow */
+  .section-eyebrow {
+    font-size: 8px;
+    letter-spacing: 3px;
+    margin-bottom: 24px;
+  }
+
+  /* About Intro */
+  .about-intro {
+    margin-bottom: 40px;
   }
 
   .about-headline {
-    font-size: 2rem;
+    font-size: 36px;
+    margin-bottom: 20px;
+    line-height: 1.2;
   }
 
-  .about-body,
-  .about-clients p {
-    font-size: 1rem;
+  .about-body {
+    font-size: 14px;
+    line-height: 1.7;
+    max-width: 100%;
+    margin: 0 auto 32px;
   }
 
-  .feature-content {
-    font-size: 0.9375rem;
-  }
-
+  /* Features Section */
   .about-features {
+    max-width: 80%;
+    margin-bottom: 40px;
     padding: 30px 0;
   }
-}
 
-@media (max-width: 480px) {
-  .about-headline {
-    font-size: 1.75rem;
+  .features-title {
+    font-size: 24px;
+    margin-bottom: 20px;
   }
 
-  .section-eyebrow {
-    font-size: 0.6875rem;
+  .feature-item {
+    margin-bottom: 20px;
   }
 
   .feature-marker {
     margin-right: 12px;
+    margin-top: 6px;
+  }
+
+  .feature-content {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  /* About Clients */
+  .about-clients {
+    margin-top: 30px;
+  }
+
+  .about-clients p {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  /* About Box */
+  .about-box {
+    padding: 24px 20px;
+    margin: 32px 0;
+  }
+
+  .about-box-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+
+  .about-prose {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .about-label {
+    font-size: 8px;
+    letter-spacing: 2.5px;
   }
 }
